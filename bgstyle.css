@@ -1,0 +1,59 @@
+body	{
+  background-color : #ffffff;
+  background-image: url("lovelyImageBG.png");
+  height: auto;
+
+  /* Create the parallax scrolling effect */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 700px;
+  background-position: center bottom;
+  index:5;
+}
+
+
+@keyframes heartfade {
+  0% {
+    opacity : 1;
+  }
+  50% {
+    opacity : 0;
+  }
+}
+.heart {
+  z-index : 999;
+  animation : heartfade 6s linear;
+  position : absolute;
+}
+.heart:before,
+.heart:after {
+  content : "";
+  background-color : #fc2a62;
+  position : absolute;
+  height : 30px;
+  width : 45px;
+  border-radius : 15px 0px 0px 15px;
+}
+
+.heart:before {
+  transform : rotate(45deg);
+}
+
+.heart:after {
+  left : 10.5px;
+  transform : rotate(135deg);
+}
+
+/**new css**/
+/*
+.caption {
+  width: 400px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+.caption p{
+  text-align: center;
+}
+*/
